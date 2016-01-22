@@ -6,7 +6,7 @@ import scala.collection.mutable.Stack
 
 import org.scalatest.FlatSpec
 import org.scalatest.Suite
-import org.scalatest.matchers.MustMatchers
+import org.scalatest.MustMatchers
 
 class StackSpec extends FlatSpec with MustMatchers with Suite {
 
@@ -20,6 +20,6 @@ class StackSpec extends FlatSpec with MustMatchers with Suite {
 
   it should "throw NoSuchElementException if an empty stack is popped" in {
     val emptyStack = new Stack[String]
-    evaluating { emptyStack.pop() } must produce[NoSuchElementException]
+    an[NoSuchElementException] must be thrownBy { emptyStack.pop() }
   }
 }
