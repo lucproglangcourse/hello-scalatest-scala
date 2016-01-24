@@ -13,5 +13,5 @@ developers to write natural sentences to create tests. For example, one can tell
 datatype should have a particular size of elements, by something like:
 "An empty Set" should "have size 0"
 
-For more information, check out the (official documentation )[ttp://www.scalatest.org/user_guide/selecting_a_style]
+For more information, check out the [official documentation](http://www.scalatest.org/user_guide/selecting_a_style)
 
