@@ -7,6 +7,6 @@ scalaVersion := "2.11.8"
 scalacOptions ++= Seq("-deprecation", "-feature", "-unchecked")
 
 libraryDependencies ++= Seq(
-  "org.scalatest" %% "scalatest" % "3.0.1" % Test,
+  "org.scalatest" %% "scalatest" % "2.2.6" % Test,
   "org.scalacheck" %% "scalacheck" % "1.12.6" % Test
 )
