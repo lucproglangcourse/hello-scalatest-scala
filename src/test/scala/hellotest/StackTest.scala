@@ -14,8 +14,8 @@ class StackSpec extends FlatSpec with MustMatchers with Suite {
     val stack = new Stack[Int]
     stack.push(1)
     stack.push(2)
-    stack.pop() must equal (2)
-    stack.pop() must equal (1)
+    stack.pop() must equal(2)
+    stack.pop() must equal(1)
   }
 
   it should "throw NoSuchElementException if an empty stack is popped" in {
