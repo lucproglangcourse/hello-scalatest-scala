@@ -1,6 +1,6 @@
 package hellotest
 
-// example straight from scalatest.org 
+// example straight from scalatest.org
 
 import scala.collection.mutable.Stack
 
