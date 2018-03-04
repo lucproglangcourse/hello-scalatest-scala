@@ -11,7 +11,7 @@ import org.scalatest.MustMatchers
 class StackSpec extends FlatSpec with MustMatchers with Suite {
 
   "A Stack" should "pop values in last-in-first-out order" in {
-    val stack = new Stack[Int]
+    val stack = Stack.empty[Int]
     stack.push(1)
     stack.push(2)
     stack.pop() must equal(2)
@@ -19,7 +19,7 @@ class StackSpec extends FlatSpec with MustMatchers with Suite {
   }
 
   it should "throw NoSuchElementException if an empty stack is popped" in {
-    val emptyStack = new Stack[String]
+    val emptyStack = Stack.empty[Int]
     an[NoSuchElementException] must be thrownBy { emptyStack.pop() }
   }
 }
