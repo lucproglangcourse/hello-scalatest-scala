@@ -4,11 +4,11 @@ package hellotest
 
 import scala.collection.mutable.Stack
 
-import org.scalatest.FlatSpec
+import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.Suite
-import org.scalatest.MustMatchers
+import org.scalatest.matchers.must.Matchers._
 
-class StackSpec extends FlatSpec with MustMatchers with Suite {
+class StackSpec extends AnyFlatSpec with Suite {
 
   "A Stack" should "pop values in last-in-first-out order" in {
     val stack = Stack.empty[Int]
