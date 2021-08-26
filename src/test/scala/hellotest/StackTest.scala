@@ -6,7 +6,7 @@ import scala.collection.mutable.Stack
 
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.Suite
-import org.scalatest.matchers.must.Matchers._
+import org.scalatest.matchers.must.Matchers.*
 
 class StackSpec extends AnyFlatSpec with Suite {
 
