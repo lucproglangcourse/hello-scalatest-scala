@@ -1,6 +1,6 @@
 name := "hello-scalatest-scala"
 
-version := "0.2"
+version := "0.3"
 
 scalaVersion := "3.3.3"
 
