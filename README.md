@@ -39,3 +39,9 @@ sbt> run
 ```
 sbt> test
 ```
+
+To exit sbt, enter
+
+```
+sbt> exit
+```
